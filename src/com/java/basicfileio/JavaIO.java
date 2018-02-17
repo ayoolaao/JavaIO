@@ -15,12 +15,7 @@ public class JavaIO {
     }
 
     public static boolean searchText(String text, StringBuffer content){
-        try {
-            return content.toString().toLowerCase().contains(text.toLowerCase());
-        } catch (Exception e){
-            e.printStackTrace();
-        }
-        return false;
+        return content.toString().toLowerCase().contains(text.toLowerCase());
     }
 
     public static void deleteFile(String path) throws IOException{
